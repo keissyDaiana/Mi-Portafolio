@@ -1908,3 +1908,185 @@ footer .arriba:hover {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container-header header {
+        padding: 12px 16px;
+    }
+
+    .container-header header .logo a {
+        font-size: clamp(1.35rem, 7vw, 2rem);
+    }
+
+    nav.responsive {
+        right: 16px;
+        top: 64px;
+        width: min(180px, calc(100vw - 32px));
+    }
+
+    .inicio {
+        min-height: auto;
+        padding: 105px 14px 45px;
+    }
+
+    .inicio .container-benner {
+        padding: 24px 16px;
+        gap: 18px;
+        border-radius: 20px;
+    }
+
+    .profile-shell {
+        width: min(190px, 70vw);
+        height: min(190px, 70vw);
+    }
+
+    .inicio .container-benner .container-img {
+        width: min(155px, 58vw);
+        height: min(155px, 58vw);
+    }
+
+    .eyebrow {
+        max-width: 100%;
+        letter-spacing: 0.12em;
+        font-size: 0.7rem;
+    }
+
+    .inicio .container-benner h1 {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+        overflow-wrap: anywhere;
+    }
+
+    .inicio .container-benner h2 {
+        font-size: 0.92rem;
+    }
+
+    .btn-cta {
+        align-self: center;
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .sobremi,
+    .skills,
+    .curriculum,
+    .portfolio,
+    .contacto {
+        padding: 52px 14px;
+    }
+
+    .sobremi h2,
+    .skills h2,
+    .curriculum h2,
+    .portfolio h2,
+    .contacto h2 {
+        font-size: clamp(2rem, 11vw, 3rem);
+    }
+
+    .sobremi .container-section p {
+        font-size: 15px;
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+    }
+
+    .sobremi .fila .col,
+    .skills .fila .col,
+    .curriculum .fila .col,
+    .contacto .col {
+        min-width: 0;
+    }
+
+    .sobremi .fila .col:first-child,
+    .sobremi .fila .col.card,
+    .skills .fila .col {
+        padding: 20px 16px;
+    }
+
+    .sobremi .fila .col ul {
+        padding: 14px;
+    }
+
+    .sobremi .fila .col ul li {
+        overflow-wrap: anywhere;
+    }
+
+    .sobremi .fila .col ul li strong {
+        display: block;
+        width: auto;
+        margin-bottom: 3px;
+    }
+
+    .sobremi .fila .col .container-intereses {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sobremi .fila .col .container-intereses .intereses {
+        width: 100%;
+    }
+
+    .skills .fila .col h3,
+    .curriculum .fila .col h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills .fila .col h3 i,
+    .curriculum .fila .col h3 i {
+        flex: 0 0 38px;
+    }
+
+    .curriculum .fila .col .item {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .curriculum .fila .item .casa,
+    .curriculum .fila .item p {
+        overflow-wrap: anywhere;
+    }
+
+    .curriculum .fila .item .casa {
+        font-size: 0.95rem;
+    }
+
+    .portfolio-subtitle {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .portfolio .galeria .proyecto {
+        height: 220px;
+        min-height: 220px;
+        position: relative;
+    }
+
+    .portfolio .galeria .proyecto img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contacto .contact-form,
+    .contacto .contact-card {
+        padding: 16px;
+    }
+
+    .contacto .contact-form input,
+    .contacto .contact-form textarea,
+    .contacto .btn-contacto {
+        max-width: 100%;
+    }
+
+    .contacto .btn-contacto {
+        white-space: normal;
+    }
+
+    .map-wrap {
+        height: 210px;
+    }
+
+    .contacto .col .info ul li {
+        overflow-wrap: anywhere;
+    }
+}
