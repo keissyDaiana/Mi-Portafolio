@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--menu header-->
+    <div class="container-header">
+        <header class="header">
+            <div class="logo">
+                <a href="#">@keissyDaiana</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()"> Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()"> Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarocultarMenu()" role="button" tabindex="0" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--section inicio-->
+<section id="inicio" class="inicio">
+    <div class="container-benner">
+        <div class="profile-shell">
+            <div class="container-img">
+                <img src="imag/key.png" alt="foto de perfil">
+            </div>
+        </div>
+        <div class="hero-content">
+            <p class="eyebrow">Aprendiz Desarrolladora de software</p>
+            <h1>Keissy Daiana <span class="highlight">Benítez Trujillo</span></h1>
+            <h2>Me apaciona crear experiencias digitales intuitivas, funcinales y visual mente atractivas </h2>
+            <div class="redes">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="#portafolio" class="btn-cta">Ver Portafolio</a>
+        </div>
+    </div>
+</section>
+
+    <!--section sobre mí-->
+    <section id="sobremi" class="sobremi">
+        <div class="container-section">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy KeissyDaiana </span> tengo 18 años , tengo un tecnologo en desarrollo de software. Me considero una
+                persona responsable, proactiva y con muchas ganas de aprender.
+                Me gusta trabajar en equipo y siempre estoy dispuesta a ayudar a mis compañeros. Me apasiona la
+                tecnología y me encanta estar al día con las últimas tendencias en el mundo del desarrollo de software.
+            </p>
+            <div class="fila">
+                <!---datos personales --->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-04-2008
+                        </li>
+                        <li>
+                            <strong>Telefeno</strong>
+                            +57 322 716 0600
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            keissydaianabeniteztrujillo@gmail.com
+                        </li>
+                        <li>
+                            <strong>WebSite</strong>
+                            <a href="https://github.com/keissyDaiana">github.com/keissyDaiana</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Garzon,Huila,Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Aprendiz Sena</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col card">
+                    <h3><i class="fa-solid fa-heart"></i> Intereses</h3>
+                    <div class="container-intereses">
+                        <div class="intereses interes-1"><i class="fa-solid fa-gamepad"></i><span>Juegos</span></div>
+                        <div class="intereses interes-2"><i class="fa-solid fa-music"></i><span>Música</span></div>
+                        <div class="intereses interes-3"><i class="fa-solid fa-film"></i><span>Películas</span></div>
+                        <div class="intereses interes-5"><i class="fa-solid fa-paintbrush"></i><span>Arte</span></div>
+                        <div class="intereses interes-4"><i class="fa-solid fa-book"></i><span>Libros</span></div>
+                        <div class="intereses interes-6"><i class="fa-solid fa-plane"></i><span>Viajes</span></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <button>
+                    descarga cv <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+    <!--section skills-->
+    <section id="skills" class="skills">
+        <div class="container-section">
+            <h2>Skills<span class="highlight">ll</span>s</h2>
+            <div class="dots-divider">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="fila">
+                <!--technical skills-->
+                <div class="col col-tech">
+                    <h3><i class="fa-solid fa-code"></i>Technical Skills</h3>
+
+                    <div class="skill" data-percent="90">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="85">
+                    <span class="skill-name">HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="80">
+                    <span class="skill-name">Photoshop</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="80">
+                    <span class="skill-name">Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="70">
+                    <span class="skill-name">React</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Professional Skills-->
+            <div class="col col-prof">
+                <h3><i class="fa-solid fa-users"></i> Professional Skills</h3>
+
+                <div class="skill" data-percent="90">
+                    <span class="skill-name">Trabajo en equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="85">
+                    <span class="skill-name">Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="80">
+                    <span class="skill-name">Resolución de problemas</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="85">
+                    <span class="skill-name">Dedicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+                <div class="skill" data-percent="70">
+                    <span class="skill-name">Project Management</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                        <div class="circulo"><span class="numero">0</span>%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= SECCIÓN CURRICULUM ================= -->
+<section id="curriculum" class="curriculum">
+    <div class="puntos-tecnologicos" aria-hidden="true">
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+        <span class="punto-flotante"></span>
+    </div>
+    <div class="container-section">
+        <h2>Curriculum</h2>
+        <div class="dots-divider">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="fila">
+            <!-- Línea central con puntos -->
+            <div class="linea-central">
+                <span class="punto-central"></span>
+                <span class="punto-central"></span>
+                <span class="punto-central"></span>
+            </div>
+
+            <!-- Educación (Izquierda) -->
+            <div class="col izq">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Educación</h3>
+
+                <div class="item slide-left">
+                    <div class="icon-avatar"><i class="fa-solid fa-book"></i></div>
+                    <div class="item-texto">
+                        <h4>Bachiller</h4>
+                        <span class="casa">I.E Luis Calixto Leiva </span>
+                        <span class="fecha">2024</span>
+                        <p>Cuento con formación académica de bachillerato culminada en la Institución Educativa Luis Calixto Leiva, en Garzón, Huila, donde me destaqué por mi compromiso, responsabilidad y buen desempeño académico. Complementé mi formación mediante diferentes procesos de capacitación, obteniendo certificaciones que fortalecieron mis conocimientos, habilidades y competencias técnicas, contribuyendo así a mi preparación para asumir nuevos retos académicos y laborales.</p>
+                    </div>
+                </div>
+                <div class="item slide-left">
+                    <div class="icon-avatar"><i class="fa-solid fa-book"></i></div>
+                    <div class="item-texto">
+                        <h4>PROYECTO STEAM+H</h4>
+                        <span class="casa">Universidad Nacional Abierta y a Distancia</span>
+                        <span class="fecha">2024</span>
+                        <p>En 2024 participé en un proyecto STEAM+H desarrollado en la Universidad Nacional Abierta y a Distancia (UNAD), en Neiva, Huila. Esta experiencia me permitió ampliar mis conocimientos, fortalecer mis habilidades de comunicación y mejorar mi capacidad para realizar exposiciones y presentar proyectos de manera clara y segura. Además, tuve la oportunidad de conocer y participar en iniciativas orientadas a generar aportes positivos a la sociedad, lo que enriqueció significativamente mi formación personal y académica. Como reconocimiento a mi participación, recibí un certificado y una medalla, logros que representan una experiencia importante dentro de mi trayectoria formativa.</p>
+                    </div>
+                </div>
+                <div class="item slide-left">
+                    <div class="icon-avatar"><i class="fa-solid fa-book"></i></div>
+                    <div class="item-texto">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa"> -I.E Anzualtegui(Academia Militar) </span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Durante el período 2019–2022 formé parte de la banda marcial de la Academia Militar de Anzoátegui, ubicada en Neiva, Huila, donde desarrollé la habilidad de interpretar el clarinete y fortalecí competencias como la disciplina, la coordinación, el trabajo en equipo y el compromiso. Asimismo, desempeñé el cargo de brigadista durante mi etapa estudiantil, experiencia que me permitió desarrollar un mayor sentido de responsabilidad, liderazgo y disposición para apoyar a los demás.</p>
+                    </div>
+                </div>
+                <div class="item slide-left">
+                    <div class="icon-avatar"><i class="fa-solid fa-book"></i></div>
+                    <div class="item-texto">
+                        <h4>Tegnologo en Analisis y Desarrollo de Software</h4>
+                        <span class="casa"> SENA </span>
+                        <span class="fecha">2025 - 2027</span>
+                        <p>Obtuve el título de Tecnóloga en Análisis y Desarrollo de Software en el Servicio Nacional de Aprendizaje (SENA), donde fortalecí mis conocimientos en análisis, diseño, desarrollo e implementación de soluciones de software. Durante mi formación adquirí competencias en desarrollo web, bases de datos, metodologías ágiles, pruebas de software y gestión de proyectos tecnológicos. Asimismo, desarrollé habilidades en trabajo en equipo, pensamiento lógico, resolución de problemas y creación de aplicaciones orientadas a las necesidades del sector productivo, preparándome para afrontar nuevos retos en el ámbito tecnológico. demás.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiencia (Derecha) -->
+            <div class="col der">
+                <h3><i class="fa-solid fa-briefcase"></i> Experiencia de trabajo</h3>
+
+                <div class="item slide-right">
+                    <div class="icon-avatar"><i class="fa-solid fa-display"></i></div>
+                    <div class="item-texto">
+                        <h4>Trabajo de Oficina</h4>
+                        <span class="casa">Servicio Nacional De Aprendizaje (SENA) </span>
+                        <span class="fecha">2026</span>
+                        <p>Durante mi experiencia laboral en el SENA, participé en diferentes actividades administrativas y de apoyo a los procesos de formación. Entre mis principales funciones se encontraban la digitalización y organización de documentos, el ingreso y registro de nuevos aprendices y el apoyo en la creación y actualización de cursos en las diferentes plataformas institucionales. Esta experiencia me permitió fortalecer mis habilidades en gestión documental, manejo de herramientas digitales, organización de información, atención al detalle y trabajo en equipo.</p>
+                    </div>
+                </div>
+                <div class="item slide-right">
+                    <div class="icon-avatar"><i class="fa-solid fa-display"></i></div>
+                    <div class="item-texto">
+                        <h4>Aplicacion Coasecafe</h4>
+                        <span class="casa">Empresa Coasecafé</span>
+                        <span class="fecha">2010 - 2014</span>
+                        <p>Desarrollé y trabajé en conjunto con una empresa cafetera en la creación de una aplicación multiplataforma orientada a fortalecer su presencia y crecimiento en el mercado. El proyecto busca ampliar el alcance de la empresa, permitiéndole llegar no solo a clientes del municipio de Garzón, sino también a diferentes municipios del Huila. Asimismo, la aplicación tiene como propósito dar mayor visibilidad a la calidad y características de sus productos, facilitar que nuevos clientes conozcan la marca y mejorar el proceso de comercialización y venta mediante herramientas digitales.</p>
+                    </div>
+                </div>
+                <div class="item slide-right">
+                    <div class="icon-avatar"><i class="fa-solid fa-display"></i></div>
+                    <div class="item-texto">
+                        <h4>Trabajo Digital</h4>
+                        <span class="casa">I.E Jorge Villamil Ortega</span>
+                        <span class="fecha">2010 - 2014</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ================= SECCIÓN PORTFOLIO ================= -->
+    <section id="portafolio" class="portfolio">
+        <div class="container-section">
+            <h2>Portaf<span class="highlight">olio</span></h2>
+            <div class="dots-divider">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="portfolio-subtitle">
+                Aquí encontrarás una selección de mis proyectos. Cada uno refleja
+                <span>creatividad, dedicación</span> y <span>pasión</span> por el desarrollo.
+            </p>
+            <div class="galeria">
+                <!-- Proyecto 1 al 6 -->
+                <div class="proyecto">
+                    <img src="imag/imag1.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-color/index1.html">
+                        <h3>Proyecto 1</h3>
+                        <p>DOM-COLOR</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag2.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-contador/contador.html">
+                        <h3>Proyecto 2</h3>
+                        <p>DOM-CONTADOR</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag3.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-carro/DOM.html">
+                        <h3>Proyecto 3</h3>
+                        <p>DOM-CARRO</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag4.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-cursoranimado/index.html">
+                        <h3>Proyecto 4</h3>
+                        <p>DOM-CURSOSOR ANIMADO</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag5.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/carrusel dom/index.html">
+                        <h3>Proyecto 5</h3>
+                        <p>DOM-CARRUSEL</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag6.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/cronometro dom/index.html">
+                        <h3>Proyecto 6</h3>
+                        <p>DOM-CRONOMETRO</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag7.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-galeria/index.html">
+                        <h3>Proyecto 7</h3>
+                        <p>DOM-GALERIA</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag8.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/dom-mensaje/index.html">
+                        <h3>Proyecto 8</h3>
+                        <p>DOM-MENSAJE</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag9.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/CALCULADORA-DOM/index.html">
+                        <h3>Proyecto 9</h3>
+                        <p>DOM-CAlCULADORA</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/img10.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/Lista de tares-DOM/index.html">
+                        <h3>Proyecto 10</h3>
+                        <p>DOM-LISTA DE TAREAS</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag11.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/bateria/index.html">
+                        <h3>Proyecto 11</h3>
+                        <p>DOM-BATERIA</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag12.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/JUEGO PASAR PALABRAS/index.html">
+                        <h3>Proyecto 12</h3>
+                        <p>API-PASA PALABRAS</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag13.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/API CHISTES RANDOM/INDEX.HTML">
+                        <h3>Proyecto 13</h3>
+                        <p>API-CHISTES RANDOM</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag14.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/API_Paises/index.html">
+                        <h3>Proyecto 14</h3>
+                        <p>API-PAISES</p>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="imag/imag15.png" alt="Proyecto">
+                    <a class="overlay" href="DOM-03-012/API-Peliculas/index.html">
+                        <h3>Proyecto 15</h3>
+                        <p>API-PELICULAS</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SECCIÓN CONTACTO ================= -->
+    <section id="contacto" class="contacto">
+        <div class="container-section">
+            <h2>Contacto</h2>
+            <p class="contacto-subtitle">Hablemos sobre tu próxima idea o proyecto digital.</p>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-grid">
+                            <label>
+                                <span>Nombre</span>
+                                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                            </label>
+                            <label>
+                                <span>Correo</span>
+                                <input type="email" name="correo" placeholder="tu@correo.com" required>
+                            </label>
+                        </div>
+                        <label>
+                            <span>Asunto</span>
+                            <input type="text" name="asunto" placeholder="¿En qué podemos trabajar?" required>
+                        </label>
+                        <label>
+                            <span>Mensaje</span>
+                            <textarea name="mensaje" cols="30" rows="6" placeholder="Cuéntame los detalles de tu idea" required></textarea>
+                        </label>
+                        <button type="submit" class="btn-contacto">
+                            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+                <!-- Mapa/Info -->
+                <div class="col">
+                    <div class="contact-card">
+                        <div class="map-wrap">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1xSF-ua43YtZfVfAhjuI764ae49Fobco&ehbc=2E312F" title="Mapa de ubicación" loading="lazy"></iframe>
+                        </div>
+                        <div class="info">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> Garzón, Huila, Colombia</li>
+                            <li><i class="fa-solid fa-mobile-screen"></i> Llámame: +57 322 7160 0600</li>
+                            <li><i class="fa-solid fa-envelope"></i> E-mail: keissydaianabeniteztrujillo@gmail.com</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <a href="#inicio" class="arriba" aria-label="Volver al inicio">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#inicio" aria-label="Ir a Inicio"><i class="fa-solid fa-house"></i></a>
+            <a href="#sobremi" aria-label="Ir a Sobre mí"><i class="fa-solid fa-user"></i></a>
+            <a href="#portafolio" aria-label="Ir a Portafolio"><i class="fa-solid fa-folder-open"></i></a>
+            <a href="#contacto" aria-label="Ir a Contacto"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/script.js"></script>
+    </body>
+    
+    </html>

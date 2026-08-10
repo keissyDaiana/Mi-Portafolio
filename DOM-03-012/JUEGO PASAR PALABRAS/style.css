@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#b343bd,#405a85);
+    min-height:100vh;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Pantallas */
+
+#pantalla-inicial,
+#pantalla-juego,
+#pantalla-final{
+    width:100%;
+    max-width:1000px;
+    text-align:center;
+    background:rgba(0, 0, 0, 0.05);
+    border:1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(255, 0, 0, 0.4);
+}
+
+/* Mostrar solo inicio */
+
+#pantalla-juego,
+#pantalla-final{
+    display:none;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+/* Botones */
+
+button{
+    padding:14px 30px;
+    border:none;
+    border-radius:12px;
+    background:#266ddf;
+    color:rgb(0, 0, 0);
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    background:#0b1f49;
+}
+
+header{
+    margin-bottom:30px;
+}
+
+#tiempo{
+    font-size:3rem;
+    font-weight:bold;
+    color:#149ad3;
+}
+
+/* Contenedor juego */
+
+.contenedor-juego{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* Círculo */
+
+#circulo-letras{
+    width:420px;
+    height:420px;
+    position:relative;
+    margin:auto;
+}
+
+/* Letras */
+
+.circle{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#111827 !important;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    font-weight:bold;
+    border:2px solid #38bdf8;
+    transition:0.3s;
+}
+
+.correcta{
+    background:#22c55e !important;
+    border-color:#22c55e;
+}
+
+.incorrecta{
+    background:#ef4444 !important;
+    border-color:#ef4444;
+}
+
+.activa{
+    background:#facc15 !important;
+    color:black;
+}
+
+/* Preguntas */
+
+.preguntas{
+    width:320px;
+}
+
+#letra-pregunta{
+    font-size:4rem;
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+#pregunta{
+    font-size:1rem;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    font-size:1rem;
+    margin-bottom:20px;
+}
+
+.botones{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Pantalla Final */
+
+#pantalla-final span{
+    color:#38bdf8;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    #circulo-letras{
+        width:320px;
+        height:320px;
+    }
+
+    .circle{
+        width:40px;
+        height:40px;
+        font-size:0.9rem;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Peliculas</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="marca">
+            <span class="marca-icono" aria-hidden="true">▶</span>
+            <div>
+                <p class="sobretitulo">Descubre algo nuevo</p>
+                <h1>Cartelera popular</h1>
+            </div>
+        </div>
+        <span class="estado">TMDB · ES-MX</span>
+    </header>
+
+    <div class="contenedor" id="contenedor"></div>
+
+    <div class="pagina">
+        <button id="anterior" aria-label="Ver la página anterior"><span aria-hidden="true">←</span> Anterior</button>
+        <span class="pagina-actual" aria-live="polite">Página 1</span>
+        <button id="siguiente" aria-label="Ver la página siguiente">Siguiente <span aria-hidden="true">→</span></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

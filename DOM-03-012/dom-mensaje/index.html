@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un mensaje para ti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Un mensaje para enviar</h1>
+
+        <input
+            type="text"
+            placeholder="Escribe tu mensaje..."
+        >
+
+        <button class="btn" type="button">
+            <span>Enviar mensaje</span>
+            <span class="btn-icon" aria-hidden="true">&#8594;</span>
+        </button>
+
+        <p class="error">¡Por favor ingresa un mensaje!</p>
+
+        <h3>El último mensaje fue...</h3>
+
+        <p class="message"></p>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

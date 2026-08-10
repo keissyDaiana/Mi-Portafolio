@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    font-family: "Bungee", cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.btn{
+    position: relative;
+    isolation: isolate;
+    outline: none;
+    border: 3px solid #fef08a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    font-size: 22px;
+    background: linear-gradient(135deg, #ff4d6d 0%, #ff8a00 52%, #ffd166 100%);
+    border-radius: 14px 28px 14px 28px;
+    font-weight: 400;
+    color: #24110b;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 #24110b, 0 0 24px rgba(255, 209, 102, 0.55);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 5px;
+    border: 2px dashed rgba(36, 17, 11, 0.5);
+    border-radius: 9px 23px 9px 23px;
+    pointer-events: none;
+}
+
+.btn:hover{
+    transform: translate(-3px, -3px) rotate(-2deg);
+    filter: saturate(1.2) brightness(1.08);
+    box-shadow: 11px 11px 0 #24110b, 0 0 34px rgba(255, 209, 102, 0.8);
+}
+
+.btn:active{
+    transform: translate(5px, 5px) rotate(0deg);
+    box-shadow: 3px 3px 0 #24110b;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pantalla Inicial -->
+    <section id="pantalla-inicial">
+        <h1>🎮 PASAPALABRA</h1>
+        <p>Demuestra cuánto sabes respondiendo correctamente.</p>
+
+        <button id="btnComenzar">Comenzar Juego</button>
+    </section>
+
+    <!-- Pantalla Juego -->
+    <section id="pantalla-juego">
+
+        <header>
+            <h2>Tiempo restante</h2>
+            <div id="tiempo">60</div>
+        </header>
+
+        <div class="contenedor-juego">
+
+            <div id="circulo-letras"></div>
+
+            <div class="preguntas">
+                <h3 id="letra-pregunta">A</h3>
+
+                <p id="pregunta">
+                    Aquí aparecerá la pregunta
+                </p>
+
+                <input 
+                    type="text" 
+                    id="respuesta" 
+                    placeholder="Escribe tu respuesta..."
+                >
+
+                <div class="botones">
+                    <button id="btnResponder">
+                        Responder
+                    </button>
+
+                    <button id="btnPasar">
+                        Pasapalabra
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pantalla Final -->
+    <section id="pantalla-final">
+
+        <h1>🏆 Juego Finalizado</h1>
+
+        <p>
+            Respuestas correctas:
+            <span id="cantidad-acertadas">0</span>
+        </p>
+
+        <button id="btnReiniciar">
+            Jugar de nuevo
+        </button>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
